@@ -37,25 +37,28 @@ Authentication is required for certain endpoints. JWT tokens are used for authen
   ```
 
 Login User
+
 Endpoint: /users/login
 Method: POST
 Description: Authenticate and log in a user. Provide email and password in the request body.
-Request Body:
 
+Request Body:
+```json
 {
 "email": "user@example.com",
 "password": "password123"
 }
+```
 Response: Returns a JWT token if successful for further authentication.
 
 User Profile Management
-
+</br>
 Create Profile
 Endpoint: /profile
 Method: POST
 Description: Create a new post.
 Authorization: Bearer Token (JWT)
-
+</br>
 Get User Profile
 Endpoint: /profile/:profileId
 Method: GET
@@ -83,7 +86,7 @@ Description: Create a new post.
 Authorization: Bearer Token (JWT)
 
 Request Body:
-
+``` json
 {
 "title": "Post Title",
 "content": "Post Content",
@@ -91,6 +94,7 @@ Request Body:
 "profileId" :"mongodb \_id of the resopective profile collection"
 }
 Response: New post details if successful.
+```
 
 Get All Posts
 Endpoint: /posts
