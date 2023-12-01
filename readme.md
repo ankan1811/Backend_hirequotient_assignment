@@ -1,4 +1,4 @@
-# Project Name - API Documentation
+# - API Documentation (The entire project took me around an hour to complete)
 
 ## Overview
 
