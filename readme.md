@@ -11,7 +11,7 @@ The base URL for all endpoints is: `http://localhost:8000/`
 ## Authentication
 
 Authentication is required for certain endpoints.
-#### When checking the protected routes in postman ,Go to ```headers in postman``` , ```put key = auth-token and value = TOKEN```
+#### When checking the protected routes in postman , for that particular api, ```In headers, put key = auth-token and value = TOKEN (which will be generated) ```
 
 ## Very important:
 
