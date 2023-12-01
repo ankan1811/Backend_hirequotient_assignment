@@ -8,6 +8,9 @@ This project provides a set of RESTful APIs for managing users, posts, and comme
 
 The base URL for all endpoints is: `http://localhost:8000/`
 
+## To Run 
+### 1.npm install 2.npm start
+
 ## Authentication
 
 Authentication is required for certain endpoints.
