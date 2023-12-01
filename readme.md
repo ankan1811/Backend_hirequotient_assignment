@@ -6,11 +6,12 @@ This project provides a set of RESTful APIs for managing users, posts, and comme
 
 ## Base URL
 
-The base URL for all endpoints is: `https://your-api-domain.com/api/v1`
+The base URL for all endpoints is: `http://localhost:8000/`
 
 ## Authentication
 
-Authentication is required for certain endpoints. JWT tokens are used for authentication and should be included in the Authorization header for protected routes.
+Authentication is required for certain endpoints.
+#### When checking the protected routes in postman ,Go to ```headers in postman``` , ```put key = auth-token and value = TOKEN```
 
 ## Very important:
 
