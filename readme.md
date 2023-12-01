@@ -38,7 +38,7 @@ Authentication is required for certain endpoints. JWT tokens are used for authen
 
 Login User
 
-Endpoint: /users/login
+Endpoint: `/users/login`
 Method: POST
 Description: Authenticate and log in a user. Provide email and password in the request body.
 
@@ -136,7 +136,7 @@ Request Body: Updated post fields
 Response: Updated post details if successful.
 ```
 Delete Post
-Endpoint: /posts/:postId
+Endpoint: `/posts/:postId`
 Method: DELETE
 Description: Delete a specific post by its ID.
 Authorization: Bearer Token (JWT)
@@ -172,14 +172,14 @@ Response: List of all comments.
 ```
 
 Get Comment by ID
-Endpoint: /comments/:commentId
+Endpoint: `/comments/:commentId`
 Method: GET
 Description: Retrieve a specific comment by its ID.
 Response: Details of the specific comment if found.
 
 
 Update Comment
-Endpoint: /api/v1/comments/:commentId
+Endpoint: `comments/:commentId`
 Method: PUT
 Description: Update a specific comment by its ID.
 Authorization: Bearer Token (JWT)
@@ -188,7 +188,7 @@ Response: Updated comment details if successful.
 
 
 Delete Comment
-Endpoint: /api/v1/comments/:commentId
+Endpoint: `/comments/:commentId`
 Method: DELETE
 Description: Delete a specific comment by its ID.
 Authorization: Bearer Token (JWT)
