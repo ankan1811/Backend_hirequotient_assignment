@@ -77,10 +77,9 @@ Endpoint: /profile/:profileId
 Method: GET
 Description: Retrieve user profile details by user ID.
 Authorization: Bearer Token (JWT)
-```
-
 Response: User profile details if found.
-
+```
+```json
 Update User Profile
 Endpoint: /profile/:profileId
 Method: PUT
@@ -89,16 +88,18 @@ Authorization: Bearer Token (JWT)
 
 Request Body: Updated user profile fields
 Response: Updated user profile details.
+```
 
 Posts
 Post Creation and Retrieval
 
+```json
 Create Post
 Endpoint: /posts
 Method: POST
 Description: Create a new post.
 Authorization: Bearer Token (JWT)
-
+```
 Request Body:
 ``` json
 {
@@ -109,19 +110,23 @@ Request Body:
 }
 Response: New post details if successful.
 ```
-
+```json
 Get All Posts
 Endpoint: /posts
 Method: GET
 Description: Retrieve all posts.
 Response: List of all posts.
+```
 
+```json
 Get Post by ID
 Endpoint:/posts/:postId
 Method: GET
 Description: Retrieve a specific post by its ID.
 Response: Details of the specific post if found.
+```
 
+```json
 Update Post
 Endpoint: /posts/:postId
 Method: PUT
@@ -129,7 +134,7 @@ Description: Update a specific post by its ID.
 Authorization: Bearer Token (JWT)
 Request Body: Updated post fields
 Response: Updated post details if successful.
-
+```
 Delete Post
 Endpoint: /posts/:postId
 Method: DELETE
@@ -139,11 +144,14 @@ Response: Confirmation of post deletion.
 
 Comments
 Commenting System
+```json
 Create Comment
 Endpoint: /comments
 Method: POST
 Description: Add a comment to a post.
 Authorization: Bearer Token (JWT)
+```
+
 Request Body:
 ```json
 {
@@ -169,6 +177,7 @@ Method: GET
 Description: Retrieve a specific comment by its ID.
 Response: Details of the specific comment if found.
 
+
 Update Comment
 Endpoint: /api/v1/comments/:commentId
 Method: PUT
@@ -176,6 +185,8 @@ Description: Update a specific comment by its ID.
 Authorization: Bearer Token (JWT)
 Request Body: Updated comment fields
 Response: Updated comment details if successful.
+
+
 Delete Comment
 Endpoint: /api/v1/comments/:commentId
 Method: DELETE
