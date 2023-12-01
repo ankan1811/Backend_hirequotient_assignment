@@ -53,17 +53,31 @@ Response: Returns a JWT token if successful for further authentication.
 
 User Profile Management
 </br>
+``` json
 Create Profile
 Endpoint: /profile
 Method: POST
-Description: Create a new post.
+Description: Create a newProfile.
 Authorization: Bearer Token (JWT)
+```
 </br>
+
+```json
+{
+"userId":"mongodb \_id of the resopective user collection",
+"fullName" :"ankan",
+"bio":"optional"
+}
+```
+
+Response: Profile details if successful.
+``` json
 Get User Profile
 Endpoint: /profile/:profileId
 Method: GET
 Description: Retrieve user profile details by user ID.
 Authorization: Bearer Token (JWT)
+```
 
 Response: User profile details if found.
 
@@ -131,7 +145,7 @@ Method: POST
 Description: Add a comment to a post.
 Authorization: Bearer Token (JWT)
 Request Body:
-
+```json
 {
 "content": "Comment Content",
 "postId": "mongodb \_id of the respective post collection",
@@ -139,12 +153,15 @@ Request Body:
 "profileId" :"mongodb \_id of the resopective profile collection"
 }
 Response: New comment details if successful.
+```
 
+``` json
 Get All Comments
 Endpoint: /comments
 Method: GET
 Description: Retrieve all comments.
 Response: List of all comments.
+```
 
 Get Comment by ID
 Endpoint: /comments/:commentId
