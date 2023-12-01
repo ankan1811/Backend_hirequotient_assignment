@@ -15,7 +15,7 @@ Authentication is required for certain endpoints.
 
 ## Very important:
 
-#### UserId: \_id of the user collection
+#### UserId: \_id of the user collection (Created when user is registered for the first time)
 
 #### ProfileId: \_id of the profile collection (A user can only create his profile if he logs in)
 
