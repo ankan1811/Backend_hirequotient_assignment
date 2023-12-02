@@ -1,4 +1,4 @@
-# Project Name - API Documentation
+# API Documentation (The entire project took me around an hour to complete)
 
 ## Overview
 
@@ -21,6 +21,10 @@ Authentication is required for certain endpoints. JWT tokens are used for authen
 #### PostId: \_id of the post collection (A user can only create posts if he logs in and he has a profile)
 
 #### CommentId: \_id of the comment (Someone need all 3 above to create comment)
+
+## NOTE:
+
+#### When checking the protected routes in postman ,Go to headers , put key = auth-token and value = TOKEN
 
 ### Register User
 
