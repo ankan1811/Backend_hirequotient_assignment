@@ -63,6 +63,16 @@ const postController = {
       res.status(400).json({ message: err.message });
     }
   },
+  async getPostsByUser (req, res) {
+    const userId = req.params.userId; // Assuming the userId is passed in the URL parameters
+  
+    try {
+      const posts = await Post.find({ userId: userId });
+      res.json(posts);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+    },
 
   async deletePost(req, res) {
     const postId = req.params.postId;
@@ -78,5 +88,7 @@ const postController = {
     }
   },
 };
+// Get all posts by a specific user
+
 
 module.exports = postController;
