@@ -68,7 +68,7 @@ Response: Returns a JWT token if successful for further authentication.
 User Profile Management
 </br>
 
-```json
+```
 Create Profile
 Endpoint: /profile
 Method: POST
@@ -88,7 +88,7 @@ Authorization: Bearer Token (JWT)
 
 Response: Profile details if successful.
 
-```json
+```
 Get User Profile
 Endpoint: /profile/:profileId
 Method: GET
@@ -97,7 +97,7 @@ Authorization: Bearer Token (JWT)
 Response: User profile details if found.
 ```
 
-```json
+```
 Update User Profile
 Endpoint: /profile/:profileId
 Method: PUT
@@ -111,7 +111,7 @@ Response: Updated user profile details.
 Posts
 Post Creation and Retrieval
 
-```json
+```
 Create Post
 Endpoint: /posts
 Method: POST
@@ -121,7 +121,7 @@ Authorization: Bearer Token (JWT)
 
 Request Body:
 
-```json
+```
 {
 "title": "Post Title",
 "content": "Post Content",
@@ -131,7 +131,7 @@ Request Body:
 Response: New post details if successful.
 ```
 
-```json
+```
 Get All Posts
 Endpoint: /posts
 Method: GET
@@ -139,7 +139,7 @@ Description: Retrieve all posts.
 Response: List of all posts.
 ```
 
-```json
+```
 Get Post by ID
 Endpoint:/posts/:postId
 Method: GET
@@ -147,7 +147,7 @@ Description: Retrieve a specific post by its ID.
 Response: Details of the specific post if found.
 ```
 
-```json
+```
 Get Post  of a particular user by userID
 Endpoint:/posts/:userId 
 Method: GET
@@ -155,7 +155,7 @@ Description: Retrieve all posts of a particular user by his/her userID.
 Response: Details of the specific posts if found.
 ```
 
-```json
+```
 Update Post
 Endpoint: /posts/:postId
 Method: PUT
@@ -165,17 +165,18 @@ Request Body: Updated post fields
 Response: Updated post details if successful.
 ```
 
+```
 Delete Post
 Endpoint: `/posts/:postId`
 Method: DELETE
 Description: Delete a specific post by its ID.
 Authorization: Bearer Token (JWT)
 Response: Confirmation of post deletion.
-
+```
 Comments
 Commenting System
 
-```json
+```
 Create Comment
 Endpoint: /comments
 Method: POST
@@ -185,7 +186,7 @@ Authorization: Bearer Token (JWT)
 
 Request Body:
 
-```json
+```
 {
 "content": "Comment Content",
 "postId": "mongodb \_id of the respective post collection",
@@ -195,7 +196,7 @@ Request Body:
 Response: New comment details if successful.
 ```
 
-```json
+```
 Get All Comments
 Endpoint: /comments
 Method: GET
@@ -203,6 +204,7 @@ Description: Retrieve all comments.
 Response: List of all comments.
 ```
 
+```
 Get Comment by ID
 Endpoint: `/comments/:commentId`
 Method: GET
@@ -223,3 +225,4 @@ Method: DELETE
 Description: Delete a specific comment by its ID.
 Authorization: Bearer Token (JWT)
 Response: Confirmation of comment deletion.
+```
