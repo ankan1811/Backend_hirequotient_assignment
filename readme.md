@@ -148,6 +148,14 @@ Response: Details of the specific post if found.
 ```
 
 ```json
+Get Post  of a particular user by userID
+Endpoint:/posts/:userId 
+Method: GET
+Description: Retrieve all posts of a particular user by his/her userID.
+Response: Details of the specific posts if found.
+```
+
+```json
 Update Post
 Endpoint: /posts/:postId
 Method: PUT
