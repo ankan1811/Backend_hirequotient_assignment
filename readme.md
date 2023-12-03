@@ -44,7 +44,7 @@ Authentication is required for certain endpoints.
   {
     "username": "example_user",
     "email": "user@example.com",
-    "password": "password123"
+    "password": "password123" (minimum length:6)
   }
   ```
 
